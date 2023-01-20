@@ -1,0 +1,28 @@
+nav{
+    transition-property: height;
+    transition-duration: .5s;
+
+}
+
+@media(max-width:600px){
+    /* nav fica no topo da tela e fixo */
+    nav{
+        position: fixed;
+        width: 100%;
+        
+        top: 0;
+    }
+    #menu{
+        margin-top: 10vh;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.5em;
+        
+    }
+    header{
+        margin-top:55px;
+    }
+    
+}

@@ -1,0 +1,32 @@
+:root{
+    --corBotao: white;
+}
+.button-menu{
+    height: 32px;
+    width: 40px;
+    /* border: 1px solid var(--corBotao); */
+    position: relative; 
+    display: none;  
+}
+.linhas{
+    background-color: var(--corBotao);
+    border-radius: 5px;
+    height: 4px;
+    width: 90%;
+    /* espaça e centralizar as linhas na horizontal */
+    margin: 5px auto;
+
+    /* delay para transformar as linhas */
+    transition-duration: .5s;
+    transition-property: transform;
+}
+/* diferença de max e min, 
+max: diz que até aquele tamanho a instrução será executada 
+min: diz que a partit daquele tamanho a instrução será executada*/
+ @media (max-width: 600px){
+    .button-menu{
+        display: block;
+        
+    }
+
+} 
